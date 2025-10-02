@@ -107,10 +107,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     "hiltImplementation"("com.google.dagger:hilt-android:2.57.1")
-//    "hiltKsp"("com.google.dagger:hilt-android-compiler:2.57.1")
 
     "roomImplementation"(libs.room.coroutines)
-//    roomKsp(libs.room.compiler)
 
     "sqldelightImplementation"("app.cash.sqldelight:android-driver:2.1.0")
     "sqldelightImplementation"("app.cash.sqldelight:coroutines-extensions:2.1.0")
