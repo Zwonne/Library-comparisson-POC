@@ -7,7 +7,7 @@ import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.driver.android.AndroidSqliteDriver
 import com.example.pocdb.AppDatabase
 import com.example.pocdb.MainViewModel
-import org.koin.core.module.dsl.factoryOf
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val appKoinModule = module {
@@ -31,5 +31,5 @@ val appKoinModule = module {
         AppDatabase(sqlDriver)
     }
 
-    factoryOf(::MainViewModel)
+    viewModelOf(::MainViewModel)
 }

@@ -6,7 +6,7 @@ import com.example.pocdb.MainViewModel
 import com.example.pocdb.data.room.ChannelDao
 import com.example.pocdb.data.room.Database
 import com.example.pocdb.data.room.ProgramDao
-import org.koin.core.module.dsl.factoryOf
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val appKoinModule = module {
@@ -25,5 +25,5 @@ val appKoinModule = module {
         db.programDao()
     }
 
-    factoryOf(::MainViewModel)
+    viewModelOf(::MainViewModel)
 }
