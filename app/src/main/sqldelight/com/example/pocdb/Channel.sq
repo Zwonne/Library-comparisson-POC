@@ -1,0 +1,39 @@
+CREATE TABLE IF NOT EXISTS `channel` (
+    `id` INTEGER NOT NULL,
+    `name` TEXT,
+     PRIMARY KEY(`id`)
+);
+
+getAllChannels:
+SELECT c.id AS channelId,
+       c.name AS channelName,
+       p.id AS programId,
+       p.name AS programName,
+       p.description,
+       p.start_time,
+       p.end_time
+FROM channel c
+LEFT JOIN program p
+    ON p.channelId = c.id;
+
+getAllChannelsForTimeline:
+SELECT c.id AS channelId,
+       c.name AS channelName,
+       p.id AS programId,
+       p.name AS programName,
+       p.description,
+       p.start_time,
+       p.end_time
+FROM channel c
+LEFT JOIN program p
+    ON p.channelId = c.id
+    AND p.start_time <= :end
+    AND p.end_time >= :start
+    LIMIT :limit OFFSET :offset;
+
+upsert:
+INSERT OR REPLACE INTO channel(id, name)
+VALUES (:id, :name);
+
+deleteAll:
+DELETE FROM channel;
