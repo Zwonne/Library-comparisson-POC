@@ -62,6 +62,10 @@ android {
     }
 }
 
+ksp {
+    arg("KOIN_CONFIG_CHECK", "true")
+}
+
 var sqlDelightConfigured = false
 
 androidComponents {
@@ -74,6 +78,10 @@ androidComponents {
 
         if (flavors["di"] == "hilt") {
             dependencies.add("ksp", "com.google.dagger:hilt-android-compiler:2.57.1")
+        }
+
+        if (flavors["di"] == "koin") {
+            dependencies.add("ksp", "io.insert-koin:koin-ksp-compiler:2.1.0")
         }
     }
 
@@ -121,4 +129,5 @@ dependencies {
     "sqldelightImplementation"("app.cash.sqldelight:coroutines-extensions:2.1.0")
 
     "koinImplementation"("io.insert-koin:koin-android:4.1.0")
+    "koinImplementation"("io.insert-koin:koin-annotations:2.1.0")
 }

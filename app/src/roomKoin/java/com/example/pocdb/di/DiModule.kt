@@ -2,28 +2,24 @@ package com.example.pocdb.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.pocdb.MainViewModel
 import com.example.pocdb.data.room.ChannelDao
 import com.example.pocdb.data.room.Database
 import com.example.pocdb.data.room.ProgramDao
-import org.koin.core.module.dsl.viewModelOf
-import org.koin.dsl.module
+import org.koin.core.annotation.ComponentScan
+import org.koin.core.annotation.Factory
+import org.koin.core.annotation.Module
+import org.koin.core.annotation.Single
 
-val appKoinModule = module {
-    single<Database> {
-        val context: Context = get()
-        Room.databaseBuilder<Database>(context, Database::class.java, "room-db").build()
-    }
+@Module
+@ComponentScan("com.example.pocdb")
+class AppKoinModule {
 
-    factory<ChannelDao> {
-        val db: Database = get()
-        db.channelDao()
-    }
+    @Single
+    fun provideRoomDb(context: Context): Database = Room.databaseBuilder<Database>(context, Database::class.java, "room-db").build()
 
-    factory<ProgramDao> {
-        val db: Database = get()
-        db.programDao()
-    }
+    @Factory
+    fun provideChannelsRoomDao(db: Database): ChannelDao = db.channelDao()
 
-    viewModelOf(::MainViewModel)
+    @Factory
+    fun provideProgramsRoomDao(db: Database): ProgramDao = db.programDao()
 }

@@ -6,14 +6,17 @@ import app.cash.sqldelight.async.coroutines.synchronous
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.driver.android.AndroidSqliteDriver
 import com.example.pocdb.AppDatabase
-import com.example.pocdb.MainViewModel
-import org.koin.core.module.dsl.viewModelOf
-import org.koin.dsl.module
+import org.koin.core.annotation.ComponentScan
+import org.koin.core.annotation.Module
+import org.koin.core.annotation.Single
 
-val appKoinModule = module {
-    single<SqlDriver> {
-        val context: Context = get()
-        AndroidSqliteDriver(
+@Module
+@ComponentScan("com.example.pocdb")
+class AppKoinModule {
+
+    @Single
+    fun provideSqlDelightDriver(context: Context): SqlDriver {
+        return AndroidSqliteDriver(
             schema = AppDatabase.Schema.synchronous(),
             context = context,
             name = "AppDatabase.db",
@@ -26,10 +29,6 @@ val appKoinModule = module {
         )
     }
 
-    single<AppDatabase> {
-        val sqlDriver: SqlDriver = get()
-        AppDatabase(sqlDriver)
-    }
-
-    viewModelOf(::MainViewModel)
+    @Single
+    fun provideSqlDelightDatabase(sqlDriver: SqlDriver): AppDatabase = AppDatabase(sqlDriver)
 }

@@ -12,11 +12,13 @@ import com.example.pocdb.domain.DomainProgram
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.android.annotation.KoinViewModel
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.ZoneOffset
 import kotlin.random.Random
 
+@KoinViewModel
 class MainViewModel(
     private val sqlDelightDb: AppDatabase
 ) : ViewModel() {
