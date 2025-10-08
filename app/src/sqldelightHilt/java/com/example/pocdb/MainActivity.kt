@@ -2,10 +2,10 @@ package com.example.pocdb
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.ReportDrawn
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -21,7 +21,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.pocdb.ui.theme.POCDBTheme
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -114,6 +113,10 @@ fun Greeting(
             }
         }
     }
+
+    // Should be called after loading of data on the screen is done. But since this is a dummy app, and the UI is static,
+    // This will result in "timeToFullDisplayMs" and "timeToInitialDisplayMs" metrics to be identical.
+    ReportDrawn()
 }
 
 @Preview(showBackground = true)

@@ -2,6 +2,7 @@ package com.example.pocdb
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.ReportDrawn
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Spacer
@@ -112,6 +113,10 @@ fun Greeting(
             Spacer(modifier = Modifier.height(16.dp))
         }
     }
+
+    // Should be called after loading of data on the screen is done. But since this is a dummy app, and the UI is static,
+    // This will result in "timeToFullDisplayMs" and "timeToInitialDisplayMs" metrics to be identical.
+    ReportDrawn()
 }
 
 @Preview(showBackground = true)
