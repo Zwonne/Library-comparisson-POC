@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "POC DB"
 include(":app")
+include(":benchmarks")

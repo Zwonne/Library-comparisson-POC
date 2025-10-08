@@ -5,6 +5,7 @@ plugins {
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
     id("app.cash.sqldelight") version "2.1.0"
+    alias(libs.plugins.baselineprofile)
 }
 
 android {
@@ -43,16 +44,20 @@ android {
     productFlavors {
         create("room") {
             dimension = "db"
+            applicationIdSuffix = ".room"
         }
         create("sqldelight") {
             dimension = "db"
+            applicationIdSuffix = ".sqldelight"
         }
 
         create("hilt") {
             dimension = "di"
+            applicationIdSuffix = ".hilt"
         }
         create("koin") {
             dimension = "di"
+            applicationIdSuffix = ".koin"
         }
     }
 }
@@ -98,11 +103,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.profileinstaller)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    "baselineProfile"(project(":benchmarks"))
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
