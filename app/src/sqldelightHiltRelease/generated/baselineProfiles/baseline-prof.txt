@@ -2166,7 +2166,7 @@ HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->access$getUnspeci
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(FF)J
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(J)J
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(Landroidx/compose/ui/unit/Density;)J
-PLandroidx/compose/foundation/text/modifiers/InlineDensity;->equals-impl0(JJ)Z
+HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->equals-impl0(JJ)Z
 Landroidx/compose/foundation/text/modifiers/InlineDensity$Companion;
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity$Companion;-><init>()V
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
@@ -6651,7 +6651,7 @@ PLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawCircle-VaOC9Bg(JFJFLandroid
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawContent()V
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawDirect-eZhPAX0$ui_release(Landroidx/compose/ui/graphics/Canvas;JLandroidx/compose/ui/node/NodeCoordinator;Landroidx/compose/ui/node/DrawModifierNode;Landroidx/compose/ui/graphics/layer/GraphicsLayer;)V
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawRect-n-J9OG0(JJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V
-PLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawRoundRect-u-Aw5IA(JJJJLandroidx/compose/ui/graphics/drawscope/DrawStyle;FLandroidx/compose/ui/graphics/ColorFilter;I)V
+HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->drawRoundRect-u-Aw5IA(JJJJLandroidx/compose/ui/graphics/drawscope/DrawStyle;FLandroidx/compose/ui/graphics/ColorFilter;I)V
 PLandroidx/compose/ui/node/LayoutNodeDrawScope;->getCenter-F1C5BW0()J
 PLandroidx/compose/ui/node/LayoutNodeDrawScope;->getDensity()F
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;

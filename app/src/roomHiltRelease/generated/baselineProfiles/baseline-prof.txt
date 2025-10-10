@@ -361,7 +361,7 @@ HSPLandroidx/collection/MutableScatterMap;->initializeGrowth()V
 HSPLandroidx/collection/MutableScatterMap;->initializeMetadata(I)V
 HSPLandroidx/collection/MutableScatterMap;->initializeStorage(I)V
 HSPLandroidx/collection/MutableScatterMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-PLandroidx/collection/MutableScatterMap;->removeValueAt(I)Ljava/lang/Object;
+HSPLandroidx/collection/MutableScatterMap;->removeValueAt(I)Ljava/lang/Object;
 HSPLandroidx/collection/MutableScatterMap;->resizeStorage$collection(I)V
 HSPLandroidx/collection/MutableScatterMap;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 Landroidx/collection/MutableScatterSet;
@@ -413,7 +413,7 @@ HSPLandroidx/collection/ScatterMap;-><init>(Lkotlin/jvm/internal/DefaultConstruc
 HSPLandroidx/collection/ScatterMap;->containsKey(Ljava/lang/Object;)Z
 HSPLandroidx/collection/ScatterMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 HSPLandroidx/collection/ScatterMap;->getCapacity()I
-PLandroidx/collection/ScatterMap;->getSize()I
+HSPLandroidx/collection/ScatterMap;->getSize()I
 HSPLandroidx/collection/ScatterMap;->isEmpty()Z
 HSPLandroidx/collection/ScatterMap;->isNotEmpty()Z
 Landroidx/collection/ScatterMapKt;
@@ -801,9 +801,10 @@ HSPLandroidx/compose/foundation/BackgroundNode;->drawOutline(Landroidx/compose/u
 HSPLandroidx/compose/foundation/BackgroundNode;->drawRect(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
 HSPLandroidx/compose/foundation/BackgroundNode;->getOutline(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)Landroidx/compose/ui/graphics/Outline;
 HSPLandroidx/compose/foundation/BackgroundNode;->getShape()Landroidx/compose/ui/graphics/Shape;
+Landroidx/compose/foundation/BackgroundNode$getOutline$1;
 PLandroidx/compose/foundation/BackgroundNode$getOutline$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/foundation/BackgroundNode;Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-PLandroidx/compose/foundation/BackgroundNode$getOutline$1;->invoke()Ljava/lang/Object;
-PLandroidx/compose/foundation/BackgroundNode$getOutline$1;->invoke()V
+HSPLandroidx/compose/foundation/BackgroundNode$getOutline$1;->invoke()Ljava/lang/Object;
+HSPLandroidx/compose/foundation/BackgroundNode$getOutline$1;->invoke()V
 Landroidx/compose/foundation/BorderStroke;
 Landroidx/compose/foundation/CheckScrollableContainerConstraintsKt;
 HSPLandroidx/compose/foundation/CheckScrollableContainerConstraintsKt;->checkScrollableContainerConstraints-K40F9xA(JLandroidx/compose/foundation/gestures/Orientation;)V
@@ -2166,7 +2167,7 @@ HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->access$getUnspeci
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(FF)J
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(J)J
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->constructor-impl(Landroidx/compose/ui/unit/Density;)J
-HSPLandroidx/compose/foundation/text/modifiers/InlineDensity;->equals-impl0(JJ)Z
+PLandroidx/compose/foundation/text/modifiers/InlineDensity;->equals-impl0(JJ)Z
 Landroidx/compose/foundation/text/modifiers/InlineDensity$Companion;
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity$Companion;-><init>()V
 HSPLandroidx/compose/foundation/text/modifiers/InlineDensity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
@@ -2179,7 +2180,7 @@ Landroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;-><clinit>()V
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;-><init>(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/font/FontFamily$Resolver;IZII)V
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;-><init>(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/font/FontFamily$Resolver;IZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
-HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;->getDidOverflow$foundation_release()Z
+PLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;->getDidOverflow$foundation_release()Z
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;->getLayoutSize-YbymL2g$foundation_release()J
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;->getObserveFontChanges$foundation_release()Lkotlin/Unit;
 HSPLandroidx/compose/foundation/text/modifiers/ParagraphLayoutCache;->getParagraph$foundation_release()Landroidx/compose/ui/text/Paragraph;
@@ -5424,10 +5425,11 @@ Landroidx/compose/ui/graphics/Outline$Rounded;
 HSPLandroidx/compose/ui/graphics/Outline$Rounded;-><init>(Landroidx/compose/ui/geometry/RoundRect;)V
 HSPLandroidx/compose/ui/graphics/Outline$Rounded;->getRoundRect()Landroidx/compose/ui/geometry/RoundRect;
 HSPLandroidx/compose/ui/graphics/Outline$Rounded;->getRoundRectPath$ui_graphics_release()Landroidx/compose/ui/graphics/Path;
-PLandroidx/compose/ui/graphics/OutlineKt;->drawOutline-wDX37Ww$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Outline;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
-PLandroidx/compose/ui/graphics/OutlineKt;->drawOutline-wDX37Ww(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Outline;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V
-PLandroidx/compose/ui/graphics/OutlineKt;->size(Landroidx/compose/ui/geometry/RoundRect;)J
-PLandroidx/compose/ui/graphics/OutlineKt;->topLeft(Landroidx/compose/ui/geometry/RoundRect;)J
+Landroidx/compose/ui/graphics/OutlineKt;
+HSPLandroidx/compose/ui/graphics/OutlineKt;->drawOutline-wDX37Ww$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Outline;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+HSPLandroidx/compose/ui/graphics/OutlineKt;->drawOutline-wDX37Ww(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Outline;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V
+HSPLandroidx/compose/ui/graphics/OutlineKt;->size(Landroidx/compose/ui/geometry/RoundRect;)J
+HSPLandroidx/compose/ui/graphics/OutlineKt;->topLeft(Landroidx/compose/ui/geometry/RoundRect;)J
 Landroidx/compose/ui/graphics/Paint;
 Landroidx/compose/ui/graphics/PaintingStyle;
 HSPLandroidx/compose/ui/graphics/PaintingStyle;-><clinit>()V
@@ -5811,8 +5813,8 @@ Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;
 HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;-><init>()V
 HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getDependenciesSet$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/collection/MutableScatterSet;
 HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getDependency$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/compose/ui/graphics/layer/GraphicsLayer;
-HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getOldDependenciesSet$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/collection/MutableScatterSet;
-HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getOldDependency$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/compose/ui/graphics/layer/GraphicsLayer;
+PLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getOldDependenciesSet$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/collection/MutableScatterSet;
+PLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$getOldDependency$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;)Landroidx/compose/ui/graphics/layer/GraphicsLayer;
 PLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$setOldDependenciesSet$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;Landroidx/collection/MutableScatterSet;)V
 HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$setOldDependency$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;Landroidx/compose/ui/graphics/layer/GraphicsLayer;)V
 HSPLandroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;->access$setTrackingInProgress$p(Landroidx/compose/ui/graphics/layer/ChildLayerDependenciesTracker;Z)V
@@ -5874,7 +5876,7 @@ Landroidx/compose/ui/graphics/layer/GraphicsLayerImpl$Companion$DefaultDrawBlock
 HSPLandroidx/compose/ui/graphics/layer/GraphicsLayerImpl$Companion$DefaultDrawBlock$1;-><clinit>()V
 HSPLandroidx/compose/ui/graphics/layer/GraphicsLayerImpl$Companion$DefaultDrawBlock$1;-><init>()V
 Landroidx/compose/ui/graphics/layer/GraphicsLayerKt;
-HSPLandroidx/compose/ui/graphics/layer/GraphicsLayerKt;->drawLayer(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/layer/GraphicsLayer;)V
+PLandroidx/compose/ui/graphics/layer/GraphicsLayerKt;->drawLayer(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/layer/GraphicsLayer;)V
 HSPLandroidx/compose/ui/graphics/layer/GraphicsLayerKt;->setOutline(Landroidx/compose/ui/graphics/layer/GraphicsLayer;Landroidx/compose/ui/graphics/Outline;)V
 Landroidx/compose/ui/graphics/layer/GraphicsLayerV29;
 HSPLandroidx/compose/ui/graphics/layer/GraphicsLayerV29;-><init>(JLandroidx/compose/ui/graphics/CanvasHolder;Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;)V
@@ -6659,8 +6661,9 @@ HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->getFontScale()F
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->getSize-NH-jbRc()J
 HSPLandroidx/compose/ui/node/LayoutNodeDrawScope;->toPx-0680j_4(F)F
+Landroidx/compose/ui/node/LayoutNodeDrawScopeKt;
 PLandroidx/compose/ui/node/LayoutNodeDrawScopeKt;->access$nextDrawNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/Modifier$Node;
-PLandroidx/compose/ui/node/LayoutNodeDrawScopeKt;->nextDrawNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/Modifier$Node;
+HSPLandroidx/compose/ui/node/LayoutNodeDrawScopeKt;->nextDrawNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/Modifier$Node;
 Landroidx/compose/ui/node/LayoutNodeKt;
 HSPLandroidx/compose/ui/node/LayoutNodeKt;-><clinit>()V
 HSPLandroidx/compose/ui/node/LayoutNodeKt;->access$getDefaultDensity$p()Landroidx/compose/ui/unit/Density;
@@ -8358,7 +8361,7 @@ HSPLandroidx/compose/ui/text/TextStyle;->equals(Ljava/lang/Object;)Z
 HSPLandroidx/compose/ui/text/TextStyle;->getAlpha()F
 HSPLandroidx/compose/ui/text/TextStyle;->getBrush()Landroidx/compose/ui/graphics/Brush;
 HSPLandroidx/compose/ui/text/TextStyle;->getColor-0d7_KjU()J
-HSPLandroidx/compose/ui/text/TextStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
+PLandroidx/compose/ui/text/TextStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 HSPLandroidx/compose/ui/text/TextStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 HSPLandroidx/compose/ui/text/TextStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
 HSPLandroidx/compose/ui/text/TextStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
@@ -8369,7 +8372,7 @@ HSPLandroidx/compose/ui/text/TextStyle;->getLineHeightStyle()Landroidx/compose/u
 HSPLandroidx/compose/ui/text/TextStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
 HSPLandroidx/compose/ui/text/TextStyle;->getParagraphStyle$ui_text_release()Landroidx/compose/ui/text/ParagraphStyle;
 HSPLandroidx/compose/ui/text/TextStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformTextStyle;
-HSPLandroidx/compose/ui/text/TextStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
+PLandroidx/compose/ui/text/TextStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
 HSPLandroidx/compose/ui/text/TextStyle;->getSpanStyle$ui_text_release()Landroidx/compose/ui/text/SpanStyle;
 HSPLandroidx/compose/ui/text/TextStyle;->getTextAlign-e0LSkKk()I
 HSPLandroidx/compose/ui/text/TextStyle;->getTextDecoration()Landroidx/compose/ui/text/style/TextDecoration;
@@ -8400,9 +8403,10 @@ Landroidx/compose/ui/text/android/BoringLayoutFactory33;
 HSPLandroidx/compose/ui/text/android/BoringLayoutFactory33;-><clinit>()V
 HSPLandroidx/compose/ui/text/android/BoringLayoutFactory33;-><init>()V
 HSPLandroidx/compose/ui/text/android/BoringLayoutFactory33;->isBoring(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/TextDirectionHeuristic;)Landroid/text/BoringLayout$Metrics;
-PLandroidx/compose/ui/text/android/CanvasCompatM;-><clinit>()V
-PLandroidx/compose/ui/text/android/CanvasCompatM;-><init>()V
-PLandroidx/compose/ui/text/android/CanvasCompatM;->drawTextRun(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)V
+Landroidx/compose/ui/text/android/CanvasCompatM;
+HSPLandroidx/compose/ui/text/android/CanvasCompatM;-><clinit>()V
+HSPLandroidx/compose/ui/text/android/CanvasCompatM;-><init>()V
+HSPLandroidx/compose/ui/text/android/CanvasCompatM;->drawTextRun(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)V
 Landroidx/compose/ui/text/android/LayoutIntrinsics;
 HSPLandroidx/compose/ui/text/android/LayoutIntrinsics;-><clinit>()V
 HSPLandroidx/compose/ui/text/android/LayoutIntrinsics;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
@@ -8473,7 +8477,7 @@ Landroidx/compose/ui/text/android/TextLayout;
 HSPLandroidx/compose/ui/text/android/TextLayout;-><clinit>()V
 HSPLandroidx/compose/ui/text/android/TextLayout;-><init>(Ljava/lang/CharSequence;FLandroid/text/TextPaint;ILandroid/text/TextUtils$TruncateAt;IFFZZIIIIII[I[ILandroidx/compose/ui/text/android/LayoutIntrinsics;)V
 HSPLandroidx/compose/ui/text/android/TextLayout;-><init>(Ljava/lang/CharSequence;FLandroid/text/TextPaint;ILandroid/text/TextUtils$TruncateAt;IFFZZIIIIII[I[ILandroidx/compose/ui/text/android/LayoutIntrinsics;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-HSPLandroidx/compose/ui/text/android/TextLayout;->getDidExceedMaxLines()Z
+PLandroidx/compose/ui/text/android/TextLayout;->getDidExceedMaxLines()Z
 HSPLandroidx/compose/ui/text/android/TextLayout;->getHeight()I
 HSPLandroidx/compose/ui/text/android/TextLayout;->getIncludePadding()Z
 HSPLandroidx/compose/ui/text/android/TextLayout;->getLayout()Landroid/text/Layout;
@@ -8853,8 +8857,8 @@ Landroidx/compose/ui/text/platform/AndroidTextPaint;
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;-><clinit>()V
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;-><init>(IF)V
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->clearShader()V
-HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->getBlendMode-0nO6VwU()I
-HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->setBlendMode-s9anfk8(I)V
+PLandroidx/compose/ui/text/platform/AndroidTextPaint;->getBlendMode-0nO6VwU()I
+PLandroidx/compose/ui/text/platform/AndroidTextPaint;->setBlendMode-s9anfk8(I)V
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->setBrush-12SF9DM(Landroidx/compose/ui/graphics/Brush;JF)V
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->setColor-8_81llA(J)V
 HSPLandroidx/compose/ui/text/platform/AndroidTextPaint;->setDrawStyle(Landroidx/compose/ui/graphics/drawscope/DrawStyle;)V
